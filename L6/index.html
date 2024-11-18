@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+           text-decoration: none;
+           color: red;
+        }
+        a:hover{
+            background-color: antiquewhite;
+            color: purple;
+            border: 2px solid yellow;
+        }
+        a:visited{
+            color: blue;
+        }
+        a:active{
+            background-color: blue;
+            color: violet;
+        }
+
+        /* ul li:first-child{
+            border: 2px dashed orangered;
+        }
+        ul li:last-child{
+            border: 2px dashed orangered;
+        } */
+        ul li:nth-child(2n + 1){
+            background-color: lavender;
+        }
+        ul li:nth-child(2n + 2){
+            background-color: gainsboro;
+        }
+        p::first-letter{
+            font-size: 40px;
+            color: blue;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        p::first-line{
+            color: greenyellow;
+            background-color: antiquewhite;
+        }
+        p::selection{
+            color: red;
+            background-color: black;
+        }
+        h2::after{
+            content: " shiv";
+            color: red;
+            font-size: 30px;
+            font-family:'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="https://google.co.uk">GOOGLE</a>
+        <h2>Hello</h2>
+        <ul>
+            <li>list-item-1</li>
+            <li>list-item-2</li>
+            <li>list-item-3</li>
+            <li>list-item-4</li>
+            <li>list-item-5</li>
+            <li>list-item-6</li>
+            <li>list-item-7</li>
+            <li>list-item-8</li>
+        </ul>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat est eaque, quas dignissimos consequatur alias. Similique quis maiores architecto distinctio in, nisi quam ad deleniti ducimus provident! Enim ipsum veniam repellendus maxime harum beatae iusto, et eaque voluptate? Repellat ut atque veritatis corporis, fuga quidem harum nulla quasi ipsum nihil?</p>
+        <h2>Good morning</h2>
+    </div>
+</body>
+</html>
