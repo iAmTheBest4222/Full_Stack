@@ -1,0 +1,92 @@
+body{
+    background-color: #F7F4ED;
+}
+.container1{
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    border-color: black;
+}
+.container2{
+    /* border: 2px solid green; */
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+}
+.container3{
+    border: 2px solid blue;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+.child1{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 4px;
+    width: 50%;
+    
+}
+.child2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 4px;
+    width: 50%;
+}
+.child3{
+    /* border: 3px solid orange; */
+    margin: 4px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+
+}
+.child4{
+    /* border: 3px solid orchid; */
+    margin: 4px;
+    width: 35%;
+}
+.text{
+    margin: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.btn1{
+    width: 25%;
+    background-color: black;
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: white;
+    margin-left: 50px;
+}
+.heading{
+    font-size: 60px;
+    font-weight: 400;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+h4{
+    margin-left: 50px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
