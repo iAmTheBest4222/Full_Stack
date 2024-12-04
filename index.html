@@ -2,46 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahira Enterprises</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body id="body">
-    <script>const a=prompt("what is your name -:")
-       
-            document.body.innerHTML+=`<h1>${a} ji</h1>`
-        
-            document.body.innerHTML+=`<h1>manjao na please</h1>`
-            document.body.innerHTML+=`mere ke sath date pe jaogi? <br>
-        <input type="radio" id="yes" name="options" value="yes">
-        <label for="yes">yes</label>
-        
-        <input type="radio" id="no" name="options" value="no">
-        <label for="no">no</label>`
-        
-        // Get the radio buttons
-        const radioButtons = document.querySelectorAll('input[type="radio"]');
-        
-        // Function to check if radio button is selected
-        function checkRadioButton() {
-          radioButtons.forEach((button) => {
-            if (button.checked) {
-              if (button.value=="yes") {
-                document.body.innerHTML+=`<h1>congratulation ${a}</h1> <h2>rishta pakka</h2>`
-        
-              }else{
-                document.body.innerHTML+=`<h2>nikalu chappaalllll</h2>`
-        
-        
-              }
-              // You can also call another function or perform any action here
-            }
-          });
-        }
-        
-        // Add event listener to each radio button
-        radioButtons.forEach((button) => {
-          button.addEventListener('change', checkRadioButton);
-        });</script>
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Mahira Enterprises</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section (Intro) -->
+<section id="intro">
+    <div class="intro-content">
+        <h2>Welcome to Mahira Enterprises</h2>
+        <p>Your trusted civil engineering partner for quality construction solutions.</p>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>Mahira Enterprises is a leading civil engineering firm with a passion for excellence in construction, design, and development. With years of experience, we specialize in delivering high-quality, innovative solutions for both residential and commercial projects.</p>
+    <img src="./src/Dazzle%20illustrations.png" class="img">
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+        <div class="service-box">
+            <h3>Construction</h3>
+            <p>We handle all aspects of construction, from initial design to project completion.</p>
+        </div>
+        <div class="service-box">
+            <h3>Consultation</h3>
+            <p>Our expert engineers provide consultation services for your building projects.</p>
+        </div>
+        <div class="service-box">
+            <h3>Design</h3>
+            <p>We offer custom design solutions that meet both aesthetic and structural needs.</p>
+        </div>
+        <div class="service-box">
+            <img src="./src/undefined.png">
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery">
+    <h2>Our Projects</h2>
+    <div class="gallery-container">
+        <img src="./src/IMG-20241123-WA0058.jpg" alt="Project 1">
+        <img src="./src/IMG-20241123-WA0059.jpg" alt="Project 2">
+        <img src="./src/IMG-20241123-WA0060.jpg" alt="Project 3">
+        <img src="./src/IMG-20241123-WA0061.jpg" alt="Project 4">
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Plot no 182/590,</p>
+    <p> Vihar ABC Colony, Eldeco udhyan 2 Lucknow pin code 226025.</p>
+    <p>Email: rahul.srivastava886@gmail.com</p>
+    <p>Phone: +1 8171207111</p>
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Mahira Enterprises. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>

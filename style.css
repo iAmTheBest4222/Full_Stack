@@ -1,170 +1,252 @@
-*{
+/* Reset basic styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-nav ul li{
-    list-style: none;
-    display:inline-block;
-    text-align: center;
-    margin: 10px;
-    margin-left: 100px;
-    padding: 10px;
+/* Navbar */
+nav {
+    background-color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
     align-items: center;
-    margin: 10px;
-    font-weight: 10px;
-    
-    
 }
 
-
-#background-img{
-    width: 100%;
-    
+.navbar .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-button{
-    font-size:15px;
-    padding:10px;
-    background-color:rgb(215, 215, 233);
-    color:rgb(15, 8, 8);
-    margin:20px;
-}
-
-button:hover{
-    background-color:white;
-    color:black;
-}
-.section1{
-    text-align:center;
-    margin-left:850px;
-    width: 30%;
-    height:60%;
-    margin-top:-500px;
-    padding:40px;
-    position:relative;
-    color: aliceblue;
-}
-
-
-
-h5{
-    font-size:20px;
-    margin:10px;
-}
-
-
-.section4{
-    position:relative;
-    margin-left:200px;
-    margin-top:-500px;
-    color: aliceblue;
-}
-
-.section3{
-    width:1000px;
-    height:500px;
-    display:flex;
-    margin-top:300px;
-    margin-left:300px;
-}
-
-.section3 h6,h1{
-    margin-bottom:20px;
-    padding:20px;
-    margin-top:-100px;
-    margin-left:100px; 
-}
-.section3 .div1{
-        height:200px;
-        width:400px;
-        margin-top:100px;
-        justify-content:center;
-        margin-left:-800px;
-        margin-right:100px;
-
-    }
-    .section3 .div2{
-        height:200px;
-        width:400px;
-        margin-top:100px;
-        justify-content:center;
-        margin-left:100px;
-        margin-right:100px;
-
-    }
-
-.about{
-    height:500px;
-    display:flex;
-    margin-top:400px;
-}
-
-.about div{
-    height:200px;
-    width:600px;
-    margin:auto;
-    justify-content:center;
-    margin-left:100px;
-}
-.footer{
-    background-color:rgb(6, 18, 6);
-    margin-left:-400px;
-    height:400px;
-    width:1700px;
-    margin-top:200px;
-    text-align:center;
-    color:white;
-    padding:100px;
-    align-content: center;
-}
-.logo{
-    width: 200px;
-    display: inline-block;
-    margin-left: 100px ;
-    margin-right: 300px;
-}
-
-.horizontal-list ul li{
-    margin-top:10px;
+.nav-links {
     list-style: none;
-    padding:20px;
-    color:white;
-    display:inline-block;
-    text-align:center;
+    display: flex;
 }
-.footer div img{
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .navbar .logo a {
+        font-size: 20px;
+    }
+}
+
+/* Hero Section */
+#intro {
+    background: #5c6bc0;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#intro h2 {
+    font-size: 2.5rem;
+}
+
+#intro p {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    #intro h2 {
+        font-size: 2rem;
+    }
+
+    #intro p {
+        font-size: 1rem;
+    }
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about img {
+    width: 150px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    #about p {
+        width: 90%;
+    }
+}
+
+/* Services Section */
+#services {
+    background-color: #e3f2fd;
     padding: 40px 20px;
-    height:40px;
-    width:40px;
+    text-align: center;
 }
 
-.text{
-    margin:auto;
+#services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.card-container{
-    text-align:center;
-    font-size:15px;
-    display:flex;
+.service-container {
+    display: flex;
     justify-content: center;
-    flex-wrap:wrap;
-    margin-top:200px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.card{
-    width:500px;
-    overflow:hidden;
-    margin:20px;
+.service-box {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card img{
-    width:100%;
-    height:auto;
+.service-box img {
+    width: 200px;
 }
-.h6{
-    font-size: xx-large;
-    font-weight: 100p;
-    color: rgb(232, 154, 60);
+
+.service-box h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.service-box p {
+    font-size: 1rem;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .gallery-container img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
 }
