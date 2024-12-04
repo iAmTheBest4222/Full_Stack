@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: 15vw 60vw 25vw;
+    grid-template-rows: 10vh 40vh 40vh 10vh;
+    border: 2px solid red;
+    /* height: 100vh; */
+    gap: 4px 4px;
+}
+.item{
+   border: 2px solid green; 
+}
+#navbar{
+    color: red;
+    background-color: grey;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#sidebar{
+    color: red;
+    background-color: rgb(128, 128, 128);
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+#content{
+    color: red;
+    background-color: rgb(52, 173, 54);
+    grid-area: 2 / 3 / 4 / 4;
+}
+#footer{
+    color: rgb(245, 48, 48);
+    background-color: rgb(170, 174, 170);
+    grid-area: 4 / 2 / 5 / 4;
+}
+img{
+    height: 100%;
+    width: 40%;
+}
+#card2{
+    display: flex;
+}
