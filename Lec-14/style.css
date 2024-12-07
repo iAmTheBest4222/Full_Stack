@@ -1,0 +1,76 @@
+.container{
+    border: 2px solid red;
+    height: 90vh;
+    width: 90vw;
+}
+.box{
+    border: 2px solid blue;
+    height: 100px;
+    width: 100px;
+    margin: 100px;
+    background-color: red;
+    /* transform: translateX(100px); */
+    /* transition: all;
+    transition-duration: 5s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+
+}
+/* .box:hover{ */
+    /* background-color: aqua; */
+    /* transform: translate(100px, 200px); */
+    /* transform: scaleX(4); */
+    /* transform: rotate(360deg); */
+    /* border-radius: 50%; */
+    /* transform: skewX(40deg); */
+    /* transform: matrix(); */
+/* } */
+/* button{
+    background-color: antiquewhite;
+    padding: 10px 30px;
+    margin: 50px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+}
+button:hover{
+    background-image: linear-gradient(to left, rgba(0, 0, 255, 0.655), rgba(255, 0, 0, 0.733));
+    border-radius: 40px;
+    transform: translateY(-15px);
+} */
+
+@keyframes slide {
+    0%{
+      transform: translate(0px, 0px);
+      background-color: red;
+      /* transform: rotate(0deg); */
+    }
+    25%{
+        transform: translate(500px, 0px);
+        background-color: green;
+    }
+    50%{
+        transform: translate(500px, 200px);
+        background-color: aqua; 
+    }
+    75%{
+        transform: translate(0px, 200px); 
+        background-color: blue;
+    }
+    100%{
+        transform: translate(0px, 0px);
+        background-color: orange;
+        /* transform: rotate(360px); */
+    }
+}
